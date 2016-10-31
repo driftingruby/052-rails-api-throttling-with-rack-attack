@@ -9,7 +9,6 @@ module Api
     end
 
     def show
-      Rails.logger.info current_user.inspect
       render json: @user #, serializer: UserSerializer
     end
 
